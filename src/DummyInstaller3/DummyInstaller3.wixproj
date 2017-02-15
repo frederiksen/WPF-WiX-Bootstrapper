@@ -4,9 +4,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>3.6</ProductVersion>
-    <ProjectGuid>{71d72680-3235-4b2f-9fa7-e8cfbd0a765c}</ProjectGuid>
+    <ProjectGuid>{c721096a-f591-4f48-9eaf-07b8165978e5}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>DummyInstaller</OutputName>
+    <OutputName>DummyInstaller3</OutputName>
     <OutputType>Package</OutputType>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>

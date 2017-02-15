@@ -33,6 +33,32 @@
       <Name>WixBalExtension</Name>
     </WixExtension>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DummyInstaller1\DummyInstaller1.wixproj">
+      <Name>DummyInstaller1</Name>
+      <Project>{71d72680-3235-4b2f-9fa7-e8cfbd0a765c}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\DummyInstaller2\DummyInstaller2.wixproj">
+      <Name>DummyInstaller2</Name>
+      <Project>{4f2b745a-4a81-4edd-a167-3c9bb1fc1362}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\DummyInstaller3\DummyInstaller3.wixproj">
+      <Name>DummyInstaller3</Name>
+      <Project>{c721096a-f591-4f48-9eaf-07b8165978e5}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.

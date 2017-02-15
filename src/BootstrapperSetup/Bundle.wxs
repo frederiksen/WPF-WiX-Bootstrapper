@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
-  <Bundle Name="My Test Application" Version="1.0.0.0" Manufacturer="Bryan" UpgradeCode="C82A383C-751A-43B8-90BF-A250F7BC2863">
+  <Bundle Name="My Test Application" Version="1.0.0.0" Manufacturer="frederiksen" UpgradeCode="C82A383C-751A-43B8-90BF-A250F7BC2863">
     <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
       <Payload SourceFile="..\TestBA\BootstrapperCore.config"/>
       <Payload SourceFile="..\TestBA\bin\Release\TestBA.dll"/>
@@ -13,7 +13,9 @@
     <WixVariable Id="WixMbaPrereqLicenseUrl" Value="NetfxLicense.rtf" />
 
     <Chain>
-      <MsiPackage SourceFile="..\DummyInstaller\bin\Release\DummyInstaller.msi" Id="DummyInstallationPackageId" Cache="yes" Visible="no"/>
+      <MsiPackage SourceFile="$(var.DummyInstaller1.TargetPath)" Id="DummyInstallationPackageId"/>
+      <MsiPackage SourceFile="$(var.DummyInstaller2.TargetPath)" />
+      <MsiPackage SourceFile="$(var.DummyInstaller3.TargetPath)" />
     </Chain>
   </Bundle>
 
